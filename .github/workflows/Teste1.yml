@@ -27,5 +27,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git remote set-url origin https://github.com/mellorafaa/Trabalho-Gcs.git
+          git remote set-url origin git@github.com:ArturPlentz2002/Gerenciamento-tf.git
           git push origin main
