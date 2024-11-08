@@ -25,7 +25,7 @@ jobs:
 
       - name: Push changes
         env:
-          ssh_key: ${{ secrets.PAT_TOKEN }}
+          ssh-private-key: ${{ secrets.PAT_TOKEN }}
         run: |
           git remote set-url origin git@github.com:ArturPlentz2002/Gerenciamento-tf.git
           git push origin main
