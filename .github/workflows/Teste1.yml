@@ -14,8 +14,8 @@ jobs:
 
       - name: Configure Git user
         run: |
-          git config --global user.name "mellorafaa"
-          git config --global user.email "r.mello002@edu.pucrs.br"
+          git config --global user.name "ArturPlentz2002"
+          git config --global user.email "artursplentz@gmail.com"
 
       - name: Make changes and commit
         run: |
@@ -25,7 +25,6 @@ jobs:
 
       - name: Push changes
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PAT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git remote set-url origin https://github.com/mellorafaa/Trabalho-Gcs.git
           git push origin main
