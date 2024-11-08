@@ -27,8 +27,4 @@ jobs:
         env:
           PAT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-<<<<<<< HEAD
-          git push origin main
-=======
-          git push origin main
->>>>>>> ded5a58643de717dba2621f8acde30e58b74a8f4
+ 
