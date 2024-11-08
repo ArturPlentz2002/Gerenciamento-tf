@@ -24,5 +24,7 @@ jobs:
           git commit -m "Commit automático pelo GitHub Actions"
 
       - name: Push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git push https://ArturPlentz2002:${{ secrets.PAT_TOKEN }}@github.com/ArturPlentz2002/Gerenciamento-tf.git main
