@@ -24,8 +24,5 @@ jobs:
           git commit -m "Commit automático pelo GitHub Actions"
 
       - name: Push changes
-        env:
-          ssh-private-key: ${{ secrets.PAT_TOKEN }}
         run: |
-          git remote set-url origin https://github.com/ArturPlentz2002/Gerenciamento-tf.git
-          git push origin main
+          git push https://ArturPlentz2002:${{ secrets.PAT_TOKEN }}@github.com/ArturPlentz2002/Gerenciamento-tf.git main
